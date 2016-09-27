@@ -10,14 +10,17 @@ public class Circle {
 	public Circle (double rad){
 		radius = rad;
 	}
+	
 	//Acquire your methods for the area
 	public double getArea(){
 		double area = Math.PI * (radius * radius);
 		return area;
+		
 	}//Acquire method for the formatted area
 	public String getFormattedArea(){
 		String myArea = formatNumber(getArea());
 		return myArea;
+		
 	}//Acquire method for the formatted number
 	private String formatNumber(double x){
 		String formattedNumber = String.format("%,.2f", x);
@@ -25,8 +28,8 @@ public class Circle {
 
 	}
 	public double getCircumference(){
-		double circumfernce = 2* Math.PI*(radius);
-		return circumference;
+		double circ = 2* Math.PI*(radius);
+		return circ;
 	}
 	public String getFormattedCircumference(){
 		String myCirc = formatNumber(getCircumference());
