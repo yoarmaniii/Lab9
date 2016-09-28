@@ -14,6 +14,7 @@ public class CircleApp {
 		input.nextLine();
 		//show output of the circumference and area
 		Circle myCircle = new Circle(userRadius);
+		Circle.getObjectCount();
 		System.out.println("The circumference is : " + myCircle.getFormattedCircumference());
 		System.out.println("The area is : " + myCircle.getFormattedArea());
 		
@@ -31,6 +32,7 @@ public class CircleApp {
 		
 		}//End of while loop
 		System.out.println("Goodbye!");
+		System.out.println(Circle.getObjectCount());
 
 	}// End of main method
 

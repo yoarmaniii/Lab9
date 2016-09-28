@@ -5,10 +5,11 @@ public class Circle {
 	public double radius;
 	public double area;
 	public double circumference;
-	
+	public static int counter=0;
 	// Declare your constructor
 	public Circle (double rad){
 		radius = rad;
+		counter++;
 	}
 	
 	//Acquire your methods for the area
@@ -34,6 +35,10 @@ public class Circle {
 	public String getFormattedCircumference(){
 		String myCirc = formatNumber(getCircumference());
 		return myCirc;
+	}
+	public static int getObjectCount(){
+		return counter;
+		
 	}
 }	//End of Circle class
 
